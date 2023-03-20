@@ -7,7 +7,7 @@ window.addEventListener('load', function() {
         reveal.classList.add('active');
     });
 
-   //window.addEventListener('scroll', revealOnScroll);
+   window.addEventListener('scroll', revealOnScroll);
 
    function revealOnScroll(){
         var reveals = document.querySelectorAll('.reveal');

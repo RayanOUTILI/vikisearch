@@ -216,3 +216,10 @@ td{
 .random-article .article img{
     width: 100%;
 }
+
+
+#corps{
+    padding-top: 100px;
+    background-color: white;
+    border-radius: 50px;
+}
