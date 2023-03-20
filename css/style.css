@@ -198,7 +198,6 @@ td{
     margin-bottom: 12vh;
     display:grid;
     grid-template-columns: 25% 25% 25%;
-
 }
 
 .random-article .article{
@@ -222,6 +221,48 @@ td{
     padding-top: 100px;
     background-color: white;
     border-radius: 50px;
-    margin-right: 1%;
-    margin-left: 1%;
+
+}
+
+
+.article:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+
+.search-box.active {
+    position: fixed;
+    top: 20px;
+    left: 100px;
+    width: 35%px; 
+    margin: 0;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+
+#logo.active {
+    height: 40px; 
+    width: auto;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    margin: 0;
+    z-index: 10;
+    transition: all 0.5s ease;
+}
+
+
+.rectangle:first-child.active {
+    margin-top: 100px; 
+}
+
+
+.bloc-historique.suppr{
+    display: none;
+}
+
+.random-article.suppr{
+    display: none;
 }
