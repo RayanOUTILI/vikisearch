@@ -3,19 +3,35 @@ window.addEventListener('load', function () {
     var searchBox = document.querySelector('.search-box');
     var logo = document.querySelector('#logo');
     var reveal = document.querySelector('.reveal');
-    var firstResult = document.querySelector('.rectangle:first-child');
     var randomarticle = document.querySelector('.random-article');
     var blochistorique = document.querySelector('.bloc-historique');
+    var nav = document.querySelector('.navigation');
 
     searchButton.addEventListener('click', function (event) {
         event.preventDefault();
         searchBox.classList.add('active');
         logo.classList.add('active');
         reveal.classList.add('active');
-        firstResult.classList.add('active');
         randomarticle.classList.add('suppr');
         blochistorique.classList.add('suppr');
+        nav.classList.add('active');
+        console.log('click');
     });
+
+    //  Andy ------------------------------------------------------------
+    const checkbox = document.querySelector('#infobulle2');
+    var acc = "#2d2c2c"
+    checkbox.addEventListener('click', function() {
+        document.body.style.background = acc;
+        if (acc=="#2d2c2c"){
+            acc = "white"
+        }
+        else{
+            acc = "#2d2c2c"
+        }
+        
+    });
+    // fin Andy -----------------------------------------------------------
 
     window.addEventListener('scroll', revealOnScroll);
 
@@ -28,9 +44,9 @@ window.addEventListener('load', function () {
 
             if (revealTop < windowHeight - revealPoint) {
                 reveals[i].classList.add('active');
-            } else {
+            }/* else {
                 reveals[i].classList.remove('active');
-            }
+            }*/
         }
     }
 });
