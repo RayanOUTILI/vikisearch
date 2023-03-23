@@ -23,7 +23,7 @@ nav{
     height: 55px;
 }
 .navigation.active{
-    background-color: #ffffff;
+    background-color: #5C97FF;
     position: fixed;
     top: 0;
     left: 0;
@@ -98,6 +98,17 @@ input[type="checkbox"]{
     justify-content: space-between;
     margin-bottom: 4vh;
 }
+
+/*barre de recherche qui passe au dessus au scroll*/
+.search-box.fixed {
+    position: fixed;
+    top: 10px;
+    left: 100px;
+    width: 35%; 
+    margin: 0; 
+    border-radius: 50px;
+    z-index: 3;
+  }
 
 .search-box input[type="text"]{
     flex: 1;
@@ -186,6 +197,14 @@ td{
     border-color: #4d90fe;
     box-shadow: 0 0 5px rgba(77, 144, 254, 0.5);
 }
+
+.find-items{
+    display:none;
+}
+
+.find-items.active{
+    display: block;
+}
   
 .rectangle img{
     width: 45%;
@@ -204,6 +223,15 @@ td{
     margin-top: auto;
 }
 
+.random-article .article .article-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.random-article .article .article-content h2, a, p {
+    flex-basis: 30%;
+  }
 
 
 .article-content a{
@@ -270,10 +298,11 @@ td{
 #corps{
     padding-top: 100px;
     background-color: white;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
     padding-bottom: 25px;
     margin-bottom: -20px;
+
 }
 
 
@@ -285,11 +314,11 @@ td{
 
 .search-box.active {
     position: fixed;
-    top: 20px;
+    top: 10px;
     left: 100px;
-    width: 35%px; 
+    width: 35%; 
     margin: 0;
-    border-radius: 5px;
+    border-radius: 50px;
     transition: all 0.5s ease;
     z-index: 3;
 }

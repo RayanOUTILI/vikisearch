@@ -6,6 +6,7 @@ window.addEventListener('load', function () {
     var randomarticle = document.querySelector('.random-article');
     var blochistorique = document.querySelector('.bloc-historique');
     var nav = document.querySelector('.navigation');
+    var finditems = document.querySelector('.find-items');
 
     searchButton.addEventListener('click', function (event) {
         event.preventDefault();
@@ -15,7 +16,7 @@ window.addEventListener('load', function () {
         randomarticle.classList.add('suppr');
         blochistorique.classList.add('suppr');
         nav.classList.add('active');
-        console.log('click');
+        finditems.classList.add('active');
     });
 
     //  Andy ------------------------------------------------------------
@@ -32,6 +33,18 @@ window.addEventListener('load', function () {
         
     });
     // fin Andy -----------------------------------------------------------
+    
+    //à continuer c'est pour la barre de recherche qui se met en haut quand on scroll
+    const searchBar = document.querySelector('.search-box');
+
+    window.addEventListener('scroll', () => {
+    if (window.scrollY > searchBar.offsetTop) {
+        searchBar.classList.add('fixed');
+    } else {
+        searchBar.classList.remove('fixed');
+    }
+    });
+
 
     window.addEventListener('scroll', revealOnScroll);
 
