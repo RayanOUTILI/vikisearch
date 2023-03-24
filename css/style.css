@@ -183,8 +183,8 @@ td{
 .rectangle{
     width: 75%;
     height: 250px;
-    margin-right: 12.5%;
-    margin-left: 12.5%;
+    margin-right: 20%;
+    margin-left: 5%;
     align-items: center;
     background-color: #f8f8f8;
     border-radius: 10px;
@@ -211,15 +211,22 @@ td{
     height: 100%;
     margin-right: 20px;
     border-radius: 10px;
-    float: left;
+    float: right;
     margin-top: auto;
     
+}
+.rectangle .article-content h2{
+    margin-top:0;
+}
+
+.rectangle .article-content p{
+    margin-right: 200px;
 }
 
 .rectangle .article-content{
     width: 65%;
     height: 100%;
-    margin-left: 50%;
+    margin-right: 50%;
     margin-top: auto;
 }
 
@@ -234,12 +241,16 @@ td{
   }
 
 
-.article-content a{
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
+.rectangle .article-content a{
+    color: #4d90fe;
+}
+
+.rectangle .article-content h2{
+    color: rebeccapurple;
+}
+.rectangle .article-content h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .bloc-historique{
